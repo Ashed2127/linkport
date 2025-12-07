@@ -1,0 +1,13 @@
+{
+  "name": "linkport-netlify-neon",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo \"static site - no build step\""
+  },
+  "dependencies": {
+    "pg": "^8.11.0",
+    "node-fetch": "^2.6.7"
+  }
+} 

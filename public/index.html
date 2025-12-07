@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LinkPort — Directory</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="tg-container">
+    <div class="tg-header"><i class="bi bi-telegram"></i> Link Port</div>
+
+    <div id="categories" class="mb-3"></div>
+    <div id="results" class="mb-3"></div>
+
+    <div class="tg-card mt-3">
+      <h5>Admin</h5>
+      <div class="mb-2">
+        <button id="loadUsers" class="tg-btn">Load latest users</button>
+      </div>
+      <pre id="adminOut" style="white-space:pre-wrap; background:#f8f9fa; padding:10px;"></pre>
+      <div class="mt-2">
+        <small>To protect the admin endpoint, set ADMIN_TOKEN in Netlify and use header X-Admin-Token when calling.</small>
+      </div>
+    </div>
+  </div>
+
+  <script src="/data.js"></script>
+  <script src="/script.js" defer></script>
+</body>
+</html> 
